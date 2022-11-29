@@ -7,21 +7,26 @@
   --footer-second-color: #fff;
   --logo-color: #000;
   --button-filter-color:#F5F4FA;
-
 }
 body {
   font-family: 'Roboto', sans-serif;
+}
+.container {
+  max-width: 1200;
+  padding: 0 15px;
+  margin: auto;
 }
 .nav-list {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  list-style: none
+  list-style: none;
+  display: flex;
 }
 .nav-list a{
     text-decoration: none;
-    color:var(--brand-colo);
+    color:var(--brand-color);
 }
 .nav-list a:hover,
 .nav-list a:focus {
