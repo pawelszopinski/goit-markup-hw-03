@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --brand-color: #212121;
   --secondary-color: #2196f3;
@@ -10,11 +15,17 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  background: #E5E5E5;
 }
 .container {
-  max-width: 1200;
+  max-width: 1200px;
   padding: 0 15px;
-  margin: auto;
+  margin: 0 auto;
+  outline: 1px dashed red;
+}
+.page-nav {
+  display: flex;
+  justify-content: flex-start;
 }
 .nav-list {
   font-size: 14px;
@@ -23,7 +34,9 @@ body {
   letter-spacing: 0.02em;
   list-style: none;
   display: flex;
+  justify-content: flex-start;
 }
+
 .nav-list a{
     text-decoration: none;
     color:var(--brand-color);
@@ -37,7 +50,9 @@ font-size: 14px;
   font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  list-style: none
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
 .contact-list a {
   color: var(--third-color);
@@ -56,6 +71,8 @@ font-size: 14px;
   color: var(--secondary-color);
   text-decoration: none;
   letter-spacing: 0.03em;
+  display: flex;
+  padding-right: 93px;
 }
 .black-studio {
   color: var(--logo-color);
@@ -64,9 +81,15 @@ font-size: 14px;
   color: var(--footer-second-color);
 }
 .order-wrapper {
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
+  max-height: 600px;
   background-color: var(--background-color);
+}
+
+.order-wrapper-heading {
+  text-align: center;
+  padding: 200px 52px;
+  margin: 0;
 }
 .order-wrapper h1 {
   font-size: 44px;
@@ -90,30 +113,50 @@ font-size: 14px;
 }
 .paragraph-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 .paragraph-list h3 {
   font-size: 14px;
   line-height: 1.875;
   color: var(--brand-color);
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .paragraph-list p {
   font-size: 14px;
   line-height: 1.174;
   color: var(--third-color);
   letter-spacing: 0.03em;
+
+}
+.content-section {
+  padding: 94px 30px;
+  outline: 1px dashed blue;
 }
 .middle-title {
   font-size: 36px;
   line-height: 1.166;
   color: var(--brand-color);
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .img-list {
   list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.content-section-employees {
+  background: #F5F4FA;
+  padding: 94px 30px;
 }
 .employees-list{
   list-style: none;
+  display: flex;
+  gap: 30px;
 }
 .img-list-staff {
   font-size: 16px;
