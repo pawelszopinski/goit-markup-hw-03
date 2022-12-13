@@ -103,7 +103,7 @@ font-size: 14px;
 
 
 .order-wrapper {
-  background: var(--background-color);
+  background-color: var(--background-color);
   max-width: 1600;
 }
 
@@ -172,7 +172,9 @@ gap: 30px;
   letter-spacing: 0.03em;
   text-align: justify;
 }
-
+.section-content {
+  margin-top: -94px;
+}
 .middle-title {
   font-size: 36px;
   line-height: 1.166;
@@ -207,7 +209,7 @@ gap: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .list-jobs {
   font-family: Roboto;
@@ -218,8 +220,16 @@ gap: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  padding-top: 10px;
+ 
+}
+.figcap-properties {
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024; 
+  box-shadow: 0px 1px 3px 0px #0000001F;
+  border-radius: 0 0 4px 4px;
+  background-color: #fff;
+  padding-bottom: 30px;
 }
 
 .footer-nav {
@@ -262,6 +272,10 @@ gap: 30px;
   margin-right: 118px;
   margin-bottom: 50px;
 }
+.site-filter-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+}
 .site-filter button {
   font-weight: 500;
   line-height: 1.625;
@@ -275,14 +289,7 @@ gap: 30px;
 .site-filter button:focus {
   background-color: var(--secondary-color);
 }
-.site-filter button:nth-child(n+1) {
-  width: 121px;
-  height: 38px;
-}
-.site-filter button:nth-child(n+2) {
-  width: 93px;
-  height: 38px;
-}
+
 .img-list-portfolio {
   list-style: none;
   display: flex;
