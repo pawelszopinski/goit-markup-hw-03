@@ -228,14 +228,16 @@ gap: 30px;
   box-shadow: 0px 1px 1px 0px #00000024; 
   box-shadow: 0px 1px 3px 0px #0000001F;
   border-radius: 0 0 4px 4px;
-  background-color: #fff;
+  background-color: var(--footer-second-color);
   padding-bottom: 30px;
 }
-
+.footer-wrapper{
+  background-color:var(--background-color);
+  padding: 60px 0;
+}
 .footer-nav {
-  background-color: var(--background-color);
   list-style: none;
-  padding: 60px 840px 60px 15px;
+  padding: 0 840px 0 15px;
 }
 .footer-nav-list {
   list-style: none;
@@ -247,16 +249,20 @@ gap: 30px;
 .footer-nav address {
   font-style: normal;
   list-style: none;
+  
 }
 .footer-nav address p {
   color: var(--footer-second-color);
   margin: 20px 0px 9px 0px;
+  
 }
 .footer-nav address a {
   color: var(--footer-first-color);
+  line-height: 1.714;
 }
 .footer-phone {
   text-decoration: none;
+  line-height: 1.714;
 }
 .footer-nav address a:hover,
 .footer-nav address a:focus {
@@ -288,6 +294,7 @@ gap: 30px;
 .site-filter button:hover,
 .site-filter button:focus {
   background-color: var(--secondary-color);
+  color: var(--footer-second-color);
 }
 
 .img-list-portfolio {
